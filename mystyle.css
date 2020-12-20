@@ -1,0 +1,21 @@
+h2{
+    color: rgb(247, 34, 34);
+}
+.mainbox{
+    border: 2px solid rgb(67, 68, 67); 
+    background-color: rgba(212, 219, 217, 0.911);
+    width: 1000px;
+} 
+.functbox{
+    background-color: rgb(231, 240, 149);
+    border: 1px solid rgb(187, 199, 76);
+    width: 100%;
+    height: 120px;
+}
+
+.classbox{
+    border: 1px solid yellow;
+    width: 100%;
+    height: 120px;
+    background-color:rgb(168, 160, 81);
+}

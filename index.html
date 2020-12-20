@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React App</title>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+
+        function CompTP(props){
+            return <h1>Пeрвый. Функциональный компонента который сделал {props.fam}!!!</h1>
+        }
+        <br />
+
+        class CompClassovii extends React.Component{
+
+            render(){
+                return <h1>Второй. Классовый компонент который тоже сделал!!!{this.props.name}</h1>
+            }
+        }
+
+
+
+        ReactDOM.render(
+            <div className="mainbox">
+                <h2>Изучаем React JS!!!</h2>
+            <div className="functbox">
+                <CompTP  fam="Абдыразаков"/>
+            </div>
+            <br/>
+            <div className="classbox">
+                <CompClassovii name="Абдыразаков" />
+            </div>
+            <br/>
+            <input type="text" />
+            <p>1 + 2 = {1 + 2}</p>
+            
+            
+         
+        </div>
+        ,
+            document.getElementById("root")
+        )
+    </script>
+
+</body>
+</html>
